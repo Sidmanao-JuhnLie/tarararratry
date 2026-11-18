@@ -33,8 +33,6 @@
             button1 = new Button();
             label1 = new Label();
             btnReturn = new Button();
-            dataGridView1 = new DataGridView();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // button3
@@ -87,20 +85,11 @@
             btnReturn.UseVisualStyleBackColor = true;
             btnReturn.Click += btnReturn_Click;
             // 
-            // dataGridView1
-            // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(318, 242);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(240, 150);
-            dataGridView1.TabIndex = 10;
-            // 
             // Dashboard
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(dataGridView1);
             Controls.Add(btnReturn);
             Controls.Add(label1);
             Controls.Add(button3);
@@ -109,7 +98,6 @@
             Name = "Dashboard";
             Text = "z";
             Load += Dashboard_Load;
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -121,6 +109,5 @@
         private Button button1;
         private Label label1;
         private Button btnReturn;
-        private DataGridView dataGridView1;
     }
 }
